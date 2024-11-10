@@ -41,6 +41,18 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "jjjj",
+      "image": "\"./images/fiddle-leaf-fig.jpg\",",
+      "price": 10.6,
+      "id": 8
+    },
+    {
+      "name": "jjjj",
+      "image": "https://cdn.pixabay.com/photo/2022/08/05/18/50/houseplant-7367379_1280.jpg",
+      "price": 10.6,
+      "id": 9
     }
   ]
 }
