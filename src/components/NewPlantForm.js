@@ -14,19 +14,14 @@ function NewPlantForm({handleAddPlant}) {
     })
   }
 
-  const newPlant={
-    name:formData.name,
-    image:formData.image,
-    price:parseFloat(formData.price),
-  }
   function handleSubmit(event){
     event.preventDefault();
     fetch("http://localhost:6001/plants",{
       method:"POST",
       headers:{
-        "Content-Type":"application/json",
+        "Content-Type":"Application/JSON",
       },
-      body:JSON.stringify(newPlant)
+      body:JSON.stringify(formData),
     })
     .then((res)=>res.json())
     .then((addedPlant)=>handleAddPlant(addedPlant))
