@@ -18,7 +18,7 @@ function PlantCard({plant, setPlants}) {
   function handleUpdatePrice(){
     const updatePrice = parseFloat(newPrice)
 
-    fetch(`http://my-json-server.typicode.com/joycewamocho/react-hooks-cc-plantshop/plants/${plant.id}`,{
+    fetch(`https://my-json-server.typicode.com/joycewamocho/react-hooks-cc-plantshop/plants/${plant.id}`,{
       method:"PATCH",
       headers:{
         "Content-Type":"application/json",
@@ -37,7 +37,7 @@ function PlantCard({plant, setPlants}) {
   //delete plant
   
   function handleDeletePlant(){
-    fetch(`http://my-json-server.typicode.com/joycewamocho/react-hooks-cc-plantshop/plants/${plant.id}`,{
+    fetch(`https://my-json-server.typicode.com/joycewamocho/react-hooks-cc-plantshop/plants/${plant.id}`,{
       method:"DELETE",
     })
     .then(()=>{

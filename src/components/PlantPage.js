@@ -19,7 +19,7 @@ function PlantPage() {
 
   
   React.useEffect(()=>{
-    fetch("http://my-json-server.typicode.com/joycewamocho/react-hooks-cc-plantshop/plants")
+    fetch("https://my-json-server.typicode.com/joycewamocho/react-hooks-cc-plantshop/plants")
     .then((res)=>res.json())
     .then((data)=>setPlants(data))
   },[])
