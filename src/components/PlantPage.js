@@ -19,7 +19,7 @@ function PlantPage() {
 
   
   React.useEffect(()=>{
-    fetch("http://localhost:6001/plants")
+    fetch("http://my-json-server.typicode.com/joycewamocho/react-hooks-cc-plantshop/plants")
     .then((res)=>res.json())
     .then((data)=>setPlants(data))
   },[])
@@ -35,3 +35,5 @@ function PlantPage() {
 }
 
 export default PlantPage;
+
+
